@@ -16,17 +16,6 @@ export const App = () => {
   //     { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
   //   ],
 
-  // const createUser = ({ name, number }) => {
-  //   const getVisibleContacts = contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase()
-  //     );
-  //   if (getVisibleContacts) {
-  //     alert(`${name} is already in contacts.`);
-  //     return;
-  //   }
-  //  setContacts(prevContacts =>
-  //     [ { id:nanoid(), name, number }, ...prevContacts,]);
-  //   };
-
   const createUser = contact => {
     setContacts(prevContacts => [...prevContacts, { ...contact, id: nanoid() }]);
   };
