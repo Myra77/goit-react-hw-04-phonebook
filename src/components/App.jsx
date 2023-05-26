@@ -28,9 +28,9 @@ export const App = () => {
     setFilter(e.currentTarget.value);
   };
 
-  const getFilterNormalize = () => filter.toLowerCase();
+  // const getFilterNormalize = () => filter.toLowerCase();
 
-  const getFilteredContacts = () => contacts.filter(contact => contact.name.toLowerCase().includes(getFilterNormalize()));
+  // const getFilteredContacts = () => contacts.filter(contact => contact.name.toLowerCase().includes(getFilterNormalize()));
   
   useEffect(() => {
     const parsedContacts = JSON.parse(localStorage.getItem('contacts'));
