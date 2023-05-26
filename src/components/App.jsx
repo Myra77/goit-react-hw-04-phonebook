@@ -59,7 +59,6 @@ export const App = () => {
         <Filter filter={filter} onChange={onFilter} />
         <ContactList
           contacts={contacts}
-          // filteredContacts={getFilteredContacts}
           filter={filter}
           onDelete={deleteContact}
         />
